@@ -3,5 +3,33 @@
 }
 
 .jumbotron {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    height: 725px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
 }
+
+#bg1 {
+    background-image: url(../img/sugarman.jpg);
+    height: 725px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg2 {
+    background-image: url(../img/insect.jpg);
+    height: 725px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text  {
+    background-color: rgb(255,255,255,.6);
+}
+
+
