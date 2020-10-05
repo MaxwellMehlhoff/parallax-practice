@@ -7,56 +7,94 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600;700&display=swap"> 
 
 
-    <title>Hello, world!</title>
+    <title>Parallax Practice</title>
   </head>
   <body>
     <header>
+
+  <!-- Start of Nav -->
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#jumbotron_wrapper">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#jumbotron_wrapper">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#content_wrapper">Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    
+  <!-- End of Nav -->
+
+  <!-- Start of Jumbotron -->
+
+      <div class="jumbotron jumbotron-fluid" id="jumbotron_wrapper">
+        <div class="container-fluid">
+          <h1 class="display-4 text-center">This is a Road Trip</h1>
         </div>
       </div>
+
+  <!-- End of Jumbotron -->
+
     </header>
+    <main>
+
+  <!-- Start of Content -->
+
+      <div class="container-fluid" id="content_wrapper">
+        <div class="parallax row justify-content-center align-items-center d-flex" id="bg1">
+          <div class="parallax-text row col-md-10 col-lg-6 p-5 align-items-center justify-content-center d-flex">
+            <h2>Stuff</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquid, rem voluptatibus sapiente cum neque deleniti saepe aut accusantium perferendis.</p>
+            <p class="font-weight-bold">The most stuff</p>
+          </div>
+        </div>
+        <div class="parallax row justify-content-center align-items-center d-flex" id="bg2">
+          <div class="parallax-text row col-md-10 col-lg-6 p-5 align-items-center justify-content-center d-flex">
+            <h2>Stuff</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur aspernatur commodi dolorum saepe quis error laudantium dolorem voluptas at.</p>
+            <p class="font-weight-bold">Even more stuff</p>
+          </div>
+        </div>
+        <div class="parallax">
+          <div class="parallax-text">
+            <h2></h2>
+            <p class="lead"></p>
+            <p></p>
+            <p class="font-weight-bold"></p>
+          </div>
+        </div>
+      </div>      
+        
+  <!-- End of Content -->
+
+    </main>
+
+  <!-- Start of Footer -->  
+    
+    <footer>
+    
+    </footer>
+
+  <!-- End of Footer -->  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
